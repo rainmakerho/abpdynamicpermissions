@@ -1,0 +1,15 @@
+{
+  "culture": "en",
+  "texts": {
+    "AppName": "BookStore",
+    "Welcome_Text": "This is a minimalist, single layer application startup template for the ABP Framework.",
+    "Menu:Home": "Home",
+    "Permission:BookStore.RootFun": "動態Root權限",
+    "Permission:BookStore.RootFun.Fun1": "動態 Fun1",
+    "Permission:BookStore.RootFun.Fun2": "動態 Fun2",
+    "Permission:BookStore.RootFun.Fun3": "動態 Fun3",
+    "Permission:BookStore.RootFun.Fun4": "動態 Fun4",
+    "Permission:BookStore.RootFun.Fun5R": "動態 Fun5 R",
+    "Permission:BookStore.RootFun.Fun5R.F1": "動態 Fun5 F1"
+  }
+}

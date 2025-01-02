@@ -1,0 +1,70 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Acme.BookStore.Localization
+@inject IHtmlLocalizer<BookStoreResource> L
+@model Acme.BookStore.Pages.IndexModel
+
+@section styles {
+    <abp-style src="/Pages/Index.cshtml.css" />
+}
+@section scripts {
+    <abp-script src="/Pages/Index.cshtml.js" />
+}
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title text-body">Add Permissions</div>
+            </div>
+            <div class="card-body pt-0">
+                <form method="post" class="m-2">
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Group Name:</label>
+                        <input type="text" class="form-control" asp-for="GroupName">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Parent Permission Name:</label>
+                        <input type="text" class="form-control" asp-for="ParentPermissionName">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Permission Name:</label>
+                        <input type="text" class="form-control" asp-for="PermissionName">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Url:</label>
+                        <input type="text" class="form-control" asp-for="Url">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Icon:</label>
+                        <input type="text" class="form-control" asp-for="Icon">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Target:</label>
+                        <input type="text" class="form-control" asp-for="Target">
+                    </div>
+                    <button type="submit" class="btn btn-success col-12" asp-page-handler="AddPermission">增加功能</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title text-body">Set Password</div>
+            </div>
+            <div class="card-body pt-0">
+                <form method="post" class="m-2">
+                    <div class="mb-3 col-12">
+                        <label for="formula" class="form-label">Password:</label>
+                        <input type="text" class="form-control" asp-for="UserPassword">
+                    </div>
+                    <button type="submit" class="btn btn-success col-12" asp-page-handler="ResetPassword">重設密碼</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
